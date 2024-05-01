@@ -19,6 +19,8 @@
   # services.xserver.videoDrivers = ["amdgpu"];
 
   hardware.nvidia.modesetting.enable = true;
+
+}
 ```
 
 ## sync
