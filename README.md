@@ -25,7 +25,7 @@
 
 ## sync
 
-```
+```nix
 # configuration.nix
 
 { pkgs, ... }:
