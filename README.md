@@ -127,7 +127,7 @@ nix shell nixpkgs#pciutils -c lspci | grep ' VGA '"
     protonup
   ];
   
-  home.sessionVariables = {
+  environment.sessionVariables = {
     STEAM_EXTRA_COMPAT_TOOLS_PATHS =
       "\${HOME}/.steam/root/compatibilitytools.d";
   };
