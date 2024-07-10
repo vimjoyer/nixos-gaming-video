@@ -9,11 +9,11 @@
 
 {
 
-  hardware.opengl = {
+  hardware.graphics = {
     enable = true;
-    driSupport = true;
-    driSupport32Bit = true;
-  };
+    enable32bit = true;
+    }
+  # hardware.opengl has beed changed to hardware.graphics
 
   services.xserver.videoDrivers = ["nvidia"];
   # services.xserver.videoDrivers = ["amdgpu"];
