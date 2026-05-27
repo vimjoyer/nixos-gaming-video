@@ -124,7 +124,7 @@ nix shell nixpkgs#pciutils -c lspci | grep ' VGA '"
 {
 
   environment.systemPackages = with pkgs; [
-    protonup
+    protonup-ng
   ];
   
   environment.sessionVariables = {
@@ -143,7 +143,7 @@ nix shell nixpkgs#pciutils -c lspci | grep ' VGA '"
 {
 
   home.packages = with pkgs; [
-    protonup
+    protonup-ng
   ];
 
   home.sessionVariables = {
