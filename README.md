@@ -1,6 +1,6 @@
 # Gaming video
 
-## enabling opengpl and GPU drivers
+## enabling OpenGL and GPU drivers
 
 ```nix
 # configuration.nix
@@ -13,7 +13,7 @@
     enable = true;
     enable32Bit = true;
   };
-  # hardware.opengl has beed changed to hardware.graphics
+  # hardware.opengl has been changed to hardware.graphics
 
   services.xserver.videoDrivers = ["nvidia"];
   # services.xserver.videoDrivers = ["amdgpu"];
@@ -36,7 +36,7 @@
     sync.enable = true;
 
     # integrated
-    amdgpuBusId = "PCI:6:0:0"
+    amdgpuBusId = "PCI:6:0:0";
     # intelBusId = "PCI:0:0:0";
 
     # dedicated
@@ -63,7 +63,7 @@
 
     # integrated
     # intelBusId = "PCI:0:0:0";
-    amdgpuBusId = "PCI:6:0:0"
+    amdgpuBusId = "PCI:6:0:0";
     
     # dedicated
     nvidiaBusId = "PCI:1:0:0";
@@ -89,7 +89,7 @@
 ## getting ids
 
 ```bash
-nix shell nixpkgs#pciutils -c lspci | grep ' VGA '"
+nix shell nixpkgs#pciutils -c lspci | grep ' VGA '
 ```
 
 ## wrappers
